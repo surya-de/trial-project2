@@ -33,7 +33,11 @@ public class PanelSquare extends JPanel {
 		try {
 			Graphics2D obj2D = (Graphics2D) objGraphics;
 			Shape objSquare = new Rectangle(105, 60, 80, 80);
+			Shape bar = new Line2D.Double(110, 70, 110, 130);
+			Shape secondBar = new Line2D.Double(180, 70, 180, 130);
 			obj2D.draw(objSquare);
+			obj2D.draw(bar);
+			obj2D.draw(secondBar);
 		} catch (Exception ex) {
 			System.out.println(ex.getMessage());
 		}
