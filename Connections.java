@@ -53,6 +53,17 @@ class Connections extends JFrame{
     public void BarToBarConnection(Graphics2D g, int x1, int y1, int x2, int y2)
     {
         try{
+        	
+        	for (int i = 0; i < moves.size(); i ++) {
+        		if ((moves.get(i).x == x1 || moves.get(i).y == y1) && (moves.get(i).x == x1 || moves.get(i).y == y1)) {
+        			System.out.println("Already available");
+        		}
+        		else {
+                	moves.add(new java.awt.Point(x1, y1));
+                	moves.add(new java.awt.Point(x2, y2));
+                	drawLines(g, x1, y1, x2, y2);
+        		}
+        	}
         }
         catch(Exception ex){
             
