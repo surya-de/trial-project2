@@ -67,6 +67,8 @@ public class DrawShapeOnMouseClick extends JPanel {
 					graphicsDimension.drawRect(p1.x, p1.y, 100, 80);
 				} else if (currShape.equalsIgnoreCase("square")) {
 					graphicsDimension.drawRect(p1.x, p1.y, 80, 80);
+					graphicsDimension.drawLine(p1.x +5 , p1.y+10, p1.x +5, p1.y+70);
+					graphicsDimension.drawLine(p1.x +75 , p1.y+10, p1.x +75, p1.y+70);
 				} else if (currShape.equalsIgnoreCase("circle")) {
 					graphicsDimension.drawOval(p1.x-40, p1.y-40, 80, 80);
 					graphicsDimension.fillOval(p1.x-3, p1.y-3, 6, 6);
